@@ -1,0 +1,120 @@
+/* Default Light Mode */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #181818;
+    color: #fff;
+}
+
+/* Light Mode */
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    height: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+/* Dark Mode Container */
+.dark-mode .container {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* Text Area */
+textarea {
+    width: 90%;
+    padding: 10px;
+    height: 30%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+/* Dark Mode Text Area */
+.dark-mode textarea {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Theme Toggle Button */
+#themeToggle {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Button Hover */
+#themeToggle:hover {
+    background: darkred;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #141414;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    width: 100%;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Light Mode Footer */
+.light-mode .footer {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+/* Suggestions Box Styling */
+.suggestions-box {
+    position: absolute;
+    max-width: 600px;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: none;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+/* Suggestion Item Styling */
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover Effect on Suggestions */
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
